@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript">
+
+    //questão 1
+    var base, altura, area;
+    base = parseFloat(window.prompt("digite a base do retângulo: "));
+    altura = parseFloat(window.prompt("digite a altura do retângulo: "));
+    area = base * altura;
+    document.write("<h1>A área do retângulo é ", area, "</h1>");
+
+    //questão 2
+    var lado, area;
+    lado = parseFloat(window.prompt("digite a aresta do seu quadrado: "));
+    area = lado * lado;
+    document.write("<h1>A área do quadrado é ", area, "</h1>");
+
+    //questão 3
+    var diagonal, area, aoquadrado;
+    diagonal = parseFloat(window.prompt("digite a diagonal do seu quadrado: "));
+    aoquadrado = diagonal * diagonal;
+    area = aoquadrado / 2;
+    document.write("<h1>A área do quadrado é ", area, "</h1>");
+
+    //questão 4
+    var base, altura, area, novaarea;
+    base = parseFloat(window.prompt("digite a base do triângulo: "));
+    altura = parseFloat(window.prompt("digite a altura do triângulo: "));
+    area = base * altura;
+    area = area / 2;
+    document.write("<h1>A área do triângulo é ", area, "</h1>");
+
+    //questão 5
+    var n1, n2, n3, n4, media;
+    n1 = parseFloat(window.prompt("digite o primeiro número: "));
+    n2 = parseFloat(window.prompt("digite o segundo número: "));
+    n3 = parseFloat(window.prompt("digite o terceiro número: "));
+    n4 = parseFloat(window.prompt("digite o quarto número: "));
+    media = (n1 + n2 + n3 + n4) / 4;
+    document.write("<h1>A média aritmética dos valores é ", media, "</h1>");
+
+    //questão 6
+    var n1, n2, media;
+    n1 = parseFloat(window.prompt("digite o primeiro número: "));
+    n2 = parseFloat(window.prompt("digite o segundo número: "));
+    media = Math.pow(n1 * n2, 0.5);
+    document.write("<h1>A média aritmética dos valores é ", media, "</h1>");
+    
+
+    //questão 7
+    var milhas, convert;
+    milhas = parseFloat(window.prompt("informe a quantidade de milhas que deseja converter em kilometros: "));
+    convert = (milhas * 1.852);
+    document.write("<h1>", milhas," milhas em kilometros é: ", convert, "m </h1>");
+    
+
+    //questão 8
+    var celsius, fahrenheit;
+    celsius = parseFloat(window.prompt("informe a temperatura em graus Celsius: "));
+    fahrenheit = (celsius * 9 / 5) + 32;
+    document.write("<h1>", celsius,"ºC graus celsius em graus fahrenheit é: ", fahrenheit, "ºF </h1>");
+
+
+    //questão 9
+    var n1, n2, maior;
+    n1 = parseFloat(window.prompt("digite o primeiro número: "));
+    n2 = parseFloat(window.prompt("digite o segundo número(diferente do primeiro): "));
+    if (n1 > n2)
+    {
+        document.write("<h1>O maior valor é: ", n1, "</h1>");
+    }
+
+    if (n2 > n1)
+    {
+        document.write("<h1>O maior valor é: ", n2, "</h1>");
+    }
+
+    //questão 10
+    var n1, n2;
+    n1 = parseFloat(window.prompt("digite o primeiro número: "));
+    n2 = parseFloat(window.prompt("digite o segundo número(diferente do primeiro): "));
+    if (n1 > n2)
+    {
+        document.write("<h1>O maior valor é o primeiro que é: ", n1, "</h1>");
+    }
+
+    if (n1 = n2)
+    {
+        document.write("<h1>Os valores são iguais</h1>");
+    }
+
+    if (n2 > n1)
+    {
+        document.write("<h1>O maior valor é o segundo que é: ", n2, "</h1>");
+    }
+
+    //questão 11
+    var n1, n2, media;
+    n1 = parseFloat(window.prompt("digite a nota da primeira avaliação : "));
+    n2 = parseFloat(window.prompt("digite a nota da segunda avaliação: "));
+    media = (n1 + n2) / 2;
+
+    if (media >= 6)
+    {
+        document.write("<h1>Aprovado</h1>");
+    }
+
+    if (media < 6)
+    {
+        document.write("<h1>Reprovado</h1>");
+    }
+
+
+    //questão 12
+    var altura, peso, imc;
+    altura = parseFloat(window.prompt("informe a sua altura: "));
+    peso = parseFloat(window.prompt("informe o seu peso: "));
+    imc = peso / (altura * altura)
+
+    if (imc < 20)
+    {
+        document.write("<h1>Você está abaixo do peso</h1>");
+    }
+
+    if (imc >= 20 & imc < 25)
+    {
+        document.write("<h1>Você está com o peso ideal</h1>");
+    }
+    
+    if (imc >= 25)
+    {
+        document.write("<h1>Você está acima do peso</h1>");
+    }
+    
+
+    //questão 13
+    var l1, l2, l3;
+    l1 = parseFloat(window.prompt("digite o primeiro lado do triângulo: "));
+    l2 = parseFloat(window.prompt("digite o segundo lado do triângulo: "));
+    l3 = parseFloat(window.prompt("digite o terceiro lado do triângulo: "));
+    l1e2 = l1 + l2;
+    l1e3 = l1 + l3;
+    l2e3 = l2 + l3;
+
+    if (l1e2 < l3)
+    {
+        document.write("<h1>Esses valores não podem formar um triângulo</h1>");
+    }
+
+    if (l1e3 < l2)
+    {
+        document.write("<h1>Esses valores não podem formar um triângulo</h1>");
+    }
+
+    if (l2e3 < l1)
+    {
+        document.write("<h1>Esses valores não podem formar um triângulo</h1>");
+    }
+
+    if (l1 == l2 & l2 == l3)
+    {
+        document.write("<h1>Essas medidas formam um triângulo equilátero</h1>");
+    }
+
+    if (l1 == l2 & l2 != l3)
+    {
+        document.write("<h1>Essas medidas formam um triângulo isósceles</h1>");
+    }
+
+    if (l1 == l3 & l3 != l2)
+    {
+        document.write("<h1>Essas medidas formam um triângulo isósceles</h1>");
+    }
+
+    if (l2 == l3 & l3 != l1)
+    {
+        document.write("<h1>Essas medidas formam um triângulo isósceles</h1>");
+    }
+
+    if (l1 != l2 & l2 != l3 & l1 != l3)
+    {
+        document.write("<h1>Essas medidas formam um triângulo escaleno</h1>");
+    }
+    
+    //questão 14
+    var l1, l2, l3;
+    l1 = parseFloat(window.prompt("digite o primeiro lado do triângulo: "));
+    l2 = parseFloat(window.prompt("digite o segundo lado do triângulo: "));
+    l3 = parseFloat(window.prompt("digite o terceiro lado do triângulo: "));
+
+    l1 = l1 * l1;
+    l2 = l2 * l2;
+    l3 = l3 * l3;
+
+    l1e2 = l1 + l2;
+    l1e3 = l1 + l3;
+    l2e3 = l2 + l3;
+
+
+    if (l1e2 == l3)
+    {
+        document.write("<h1>Esses valores podem formar um triângulo retângulo</h1>");
+    }
+
+    if (l1e3 == l2)
+    {
+        document.write("<h1>Esses valores podem formar um triângulo retângulo</h1>");
+    }
+
+    if (l2e3 == l1)
+    {
+        document.write("<h1>Esses valores podem formar um triângulo retângulo</h1>");
+    }
+
+    else 
+    {
+        document.write("<h1>Esses valores não podem formar um triângulo retângulo</h1>");
+    }
+
+    //questão 20
+    document.write("<h1>Os 30 primeiros valores da série fibonacci são: 0,1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4.181, 6.765, 6.765, 10.946, 17.711, 28.657, 46.368, 75.025, 121.393, 196.418, 317.811, 514.229, 832.040</h1>");
+
+
+</script> 
+</body>
+</html>
